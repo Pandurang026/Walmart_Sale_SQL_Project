@@ -131,23 +131,23 @@ $ VAT = 5\% * COGS $
 CREATE DATABASE IF NOT EXISTS walmartSales;
 
 -- Create table
-CREATE TABLE IF NOT EXISTS sales(
-	invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
-    branch VARCHAR(5) NOT NULL,
-    city VARCHAR(30) NOT NULL,
-    customer_type VARCHAR(30) NOT NULL,
-    gender VARCHAR(30) NOT NULL,
-    product_line VARCHAR(100) NOT NULL,
-    unit_price DECIMAL(10,2) NOT NULL,
-    quantity INT NOT NULL,
-    tax_pct FLOAT(6,4) NOT NULL,
-    total DECIMAL(12, 4) NOT NULL,
-    date DATETIME NOT NULL,
-    time TIME NOT NULL,
-    payment VARCHAR(15) NOT NULL,
-    cogs DECIMAL(10,2) NOT NULL,
-    gross_margin_pct FLOAT(11,9),
-    gross_income DECIMAL(12, 4),
-    rating FLOAT(2, 1)
+create table Sales(
+	Invoice_Id varchar(30) not null primary key,
+	Branch varchar (30) not null,
+	City varchar(30) not null,
+	Customet_Type varchar(40) not null,
+	Gender varchar(30) not null,
+	Product_Line varchar(100) not null,
+	Unit_Price decimal(10,2) not null,
+	Quantity int not null,
+	Tax_5Percent float(6,4) not null,
+	Total decimal(12,4) not null,
+	Date datetime not null,
+	Time time not null,
+	Payment varchar(50) not null,
+	Cogs decimal(10,2) not null,
+	Gross_Margin_Percentage float(11,9),
+	Gross_Income decimal(12,4),
+	Rating float(2,1)
 );
 ```
