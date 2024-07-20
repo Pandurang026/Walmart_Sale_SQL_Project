@@ -128,7 +128,9 @@ $ VAT = 5\% * COGS $
 ```sql
 -- Create database[Uploading Walmart_Sales_Project.sql…]()
 
-CREATE DATABASE IF NOT EXISTS walmartSales;
+Create Database WalmartSale;
+	use WalmartSale;
+	show databases;
 
 -- Create table
 create table Sales(
